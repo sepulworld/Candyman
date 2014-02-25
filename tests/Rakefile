@@ -1,0 +1,13 @@
+require 'rake/clean'
+
+task :default => [:build_ldap]
+
+task :build_ldap do 
+  sh "pushd vagrant-ldap; git pull; vagrant up; popd"
+end
+
+task :destroy_ldap do 
+  sh "pushd vagrant-ldap; vagrant destroy -f; popd"
+end
+
+   
