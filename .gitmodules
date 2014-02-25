@@ -1,6 +1,3 @@
-[submodule "tests/vagrant-dap"]
-	path = tests/vagrant-dap
-	url = https://github.com/sepulworld/vagrant-ldap
-[submodule "tests/vagrant-ldap"]
-	path = tests/vagrant-ldap
+[submodule "spec/vagrant-ldap"]
+	path = spec/vagrant-ldap
 	url = https://github.com/sepulworld/vagrant-ldap
