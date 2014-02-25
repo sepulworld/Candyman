@@ -2,10 +2,12 @@ require 'rake/clean'
 
 task :default => [:build_ldap]
 
+desc "Vagrant up the test OpenLDAP instance"
 task :build_ldap do 
   sh "pushd vagrant-ldap; git pull; vagrant up; popd"
 end
 
+desc "Vagrant destory (force) the test OpenLDAP instance"
 task :destroy_ldap do 
   sh "pushd vagrant-ldap; vagrant destroy -f; popd"
 end
